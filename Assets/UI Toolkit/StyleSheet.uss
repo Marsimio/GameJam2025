@@ -1,0 +1,61 @@
+.button {
+    flex-basis: 5%;
+    flex-grow: 0.2;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-self: auto;
+    align-content: flex-start;
+    align-items: auto;
+    width: 60%;
+    color: rgb(180, 243, 236);
+    background-color: rgb(50, 182, 168);
+    -unity-background-image-tint-color: rgb(83, 205, 192);
+    border-left-color: rgb(20, 158, 143);
+    border-right-color: rgb(20, 158, 143);
+    border-top-color: rgb(20, 158, 143);
+    border-bottom-color: rgb(20, 158, 143);
+    border-top-width: 8px;
+    border-right-width: 8px;
+    border-bottom-width: 8px;
+    border-left-width: 8px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    font-size: 28px;
+    -unity-font-definition: url("project://database/Assets/Fonts/alagard.ttf?fileID=12800000&guid=ae5e69613b5fc6c4ba3abfa6c8ac0ca2&type=3#alagard");
+    -unity-text-outline-color: rgb(125, 225, 214);
+    -unity-text-outline-width: 1px;
+    -unity-text-align: middle-center;
+}
+
+.buttonHover {
+    flex-basis: 5%;
+    flex-grow: 0.2;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-self: auto;
+    align-content: flex-start;
+    align-items: auto;
+    width: 60%;
+    color: rgb(180, 243, 236);
+    background-color: rgb(50, 182, 168);
+    -unity-background-image-tint-color: rgb(83, 205, 192);
+    border-left-color: rgb(20, 158, 143);
+    border-right-color: rgb(20, 158, 143);
+    border-top-color: rgb(20, 158, 143);
+    border-bottom-color: rgb(20, 158, 143);
+    border-top-width: 16px;
+    border-right-width: 16px;
+    border-bottom-width: 16px;
+    border-left-width: 16px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    font-size: 28px;
+    -unity-font-definition: url("project://database/Assets/Fonts/alagard.ttf?fileID=12800000&guid=ae5e69613b5fc6c4ba3abfa6c8ac0ca2&type=3#alagard");
+    -unity-text-outline-color: rgb(125, 225, 214);
+    -unity-text-outline-width: 1px;
+    -unity-text-align: middle-center;
+}
