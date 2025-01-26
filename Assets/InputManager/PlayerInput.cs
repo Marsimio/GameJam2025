@@ -28,7 +28,7 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
             ""id"": ""df70fa95-8a34-4494-b137-73ab6b9c7d37"",
             ""actions"": [
                 {
-                    ""name"": ""Use"",
+                    ""name"": ""Fire"",
                     ""type"": ""Button"",
                     ""id"": ""852140f2-7766-474d-8707-702459ba45f3"",
                     ""expectedControlType"": """",
@@ -44,17 +44,26 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Pause"",
+                    ""type"": ""Button"",
+                    ""id"": ""7e91f167-7bac-4a98-86ff-bb81220cfba3"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
                 {
                     ""name"": """",
                     ""id"": ""1c04ea5f-b012-41d1-a6f7-02e963b52893"",
-                    ""path"": ""<Keyboard>/e"",
+                    ""path"": ""<Keyboard>/space"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard&Mouse"",
-                    ""action"": ""Use"",
+                    ""action"": ""Fire"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -112,6 +121,17 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                     ""action"": ""Movement"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6bfa28d0-4e99-4d62-85d3-4f1f3728fb71"",
+                    ""path"": ""<Keyboard>/p"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -181,8 +201,9 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
 }");
         // PlayerAbilities
         m_PlayerAbilities = asset.FindActionMap("PlayerAbilities", throwIfNotFound: true);
-        m_PlayerAbilities_Use = m_PlayerAbilities.FindAction("Use", throwIfNotFound: true);
+        m_PlayerAbilities_Fire = m_PlayerAbilities.FindAction("Fire", throwIfNotFound: true);
         m_PlayerAbilities_Movement = m_PlayerAbilities.FindAction("Movement", throwIfNotFound: true);
+        m_PlayerAbilities_Pause = m_PlayerAbilities.FindAction("Pause", throwIfNotFound: true);
     }
 
     ~@PlayerInput()
@@ -249,14 +270,16 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
     // PlayerAbilities
     private readonly InputActionMap m_PlayerAbilities;
     private List<IPlayerAbilitiesActions> m_PlayerAbilitiesActionsCallbackInterfaces = new List<IPlayerAbilitiesActions>();
-    private readonly InputAction m_PlayerAbilities_Use;
+    private readonly InputAction m_PlayerAbilities_Fire;
     private readonly InputAction m_PlayerAbilities_Movement;
+    private readonly InputAction m_PlayerAbilities_Pause;
     public struct PlayerAbilitiesActions
     {
         private @PlayerInput m_Wrapper;
         public PlayerAbilitiesActions(@PlayerInput wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Use => m_Wrapper.m_PlayerAbilities_Use;
+        public InputAction @Fire => m_Wrapper.m_PlayerAbilities_Fire;
         public InputAction @Movement => m_Wrapper.m_PlayerAbilities_Movement;
+        public InputAction @Pause => m_Wrapper.m_PlayerAbilities_Pause;
         public InputActionMap Get() { return m_Wrapper.m_PlayerAbilities; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -266,22 +289,28 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         {
             if (instance == null || m_Wrapper.m_PlayerAbilitiesActionsCallbackInterfaces.Contains(instance)) return;
             m_Wrapper.m_PlayerAbilitiesActionsCallbackInterfaces.Add(instance);
-            @Use.started += instance.OnUse;
-            @Use.performed += instance.OnUse;
-            @Use.canceled += instance.OnUse;
+            @Fire.started += instance.OnFire;
+            @Fire.performed += instance.OnFire;
+            @Fire.canceled += instance.OnFire;
             @Movement.started += instance.OnMovement;
             @Movement.performed += instance.OnMovement;
             @Movement.canceled += instance.OnMovement;
+            @Pause.started += instance.OnPause;
+            @Pause.performed += instance.OnPause;
+            @Pause.canceled += instance.OnPause;
         }
 
         private void UnregisterCallbacks(IPlayerAbilitiesActions instance)
         {
-            @Use.started -= instance.OnUse;
-            @Use.performed -= instance.OnUse;
-            @Use.canceled -= instance.OnUse;
+            @Fire.started -= instance.OnFire;
+            @Fire.performed -= instance.OnFire;
+            @Fire.canceled -= instance.OnFire;
             @Movement.started -= instance.OnMovement;
             @Movement.performed -= instance.OnMovement;
             @Movement.canceled -= instance.OnMovement;
+            @Pause.started -= instance.OnPause;
+            @Pause.performed -= instance.OnPause;
+            @Pause.canceled -= instance.OnPause;
         }
 
         public void RemoveCallbacks(IPlayerAbilitiesActions instance)
@@ -346,7 +375,8 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
     }
     public interface IPlayerAbilitiesActions
     {
-        void OnUse(InputAction.CallbackContext context);
+        void OnFire(InputAction.CallbackContext context);
         void OnMovement(InputAction.CallbackContext context);
+        void OnPause(InputAction.CallbackContext context);
     }
 }

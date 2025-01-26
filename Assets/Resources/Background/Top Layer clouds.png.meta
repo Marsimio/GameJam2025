@@ -1,0 +1,741 @@
+fileFormatVersion: 2
+guid: a24e622769f4e33498b5ce17928b438b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3294227671012597583
+    second: Top Layer clouds_0
+  - first:
+      213: 4628290998340938262
+    second: Top Layer clouds_1
+  - first:
+      213: 934742008198439288
+    second: Top Layer clouds_2
+  - first:
+      213: 8860984494572823129
+    second: Top Layer clouds_3
+  - first:
+      213: -6258998784930654339
+    second: Top Layer clouds_4
+  - first:
+      213: -4307838620335704077
+    second: Top Layer clouds_5
+  - first:
+      213: 3557202990327913004
+    second: Top Layer clouds_6
+  - first:
+      213: 3809214877476976943
+    second: Top Layer clouds_7
+  - first:
+      213: 8283739875691322828
+    second: Top Layer clouds_8
+  - first:
+      213: 641660226015191551
+    second: Top Layer clouds_9
+  - first:
+      213: 997906700722259756
+    second: Top Layer clouds_10
+  - first:
+      213: 652117734874141490
+    second: Top Layer clouds_11
+  - first:
+      213: -8268039424981888840
+    second: Top Layer clouds_12
+  - first:
+      213: 1488126553435427396
+    second: Top Layer clouds_13
+  - first:
+      213: 2316913531713929796
+    second: Top Layer clouds_14
+  - first:
+      213: 726973920624106501
+    second: Top Layer clouds_15
+  - first:
+      213: 4206931002376653457
+    second: Top Layer clouds_16
+  - first:
+      213: 788083556816238894
+    second: Top Layer clouds_17
+  - first:
+      213: 3725408234697896110
+    second: Top Layer clouds_18
+  - first:
+      213: 5119148496626717502
+    second: Top Layer clouds_19
+  - first:
+      213: 7697593631476248049
+    second: Top Layer clouds_20
+  - first:
+      213: 287403921803697975
+    second: Top Layer clouds_21
+  - first:
+      213: -2384116376927399126
+    second: Top Layer clouds_22
+  - first:
+      213: 1114389461231944990
+    second: Top Layer clouds_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Top Layer clouds_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 454
+        width: 921
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4fd7fbfc9277bd20800000000000000
+      internalID: 3294227671012597583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Top Layer clouds_1
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 502
+        width: 336
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61aef39242efa3040800000000000000
+      internalID: 4628290998340938262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Top Layer clouds_2
+      rect:
+        serializedVersion: 2
+        x: 4015
+        y: 318
+        width: 1105
+        height: 361
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 871ad4b67eed8fc00800000000000000
+      internalID: 934742008198439288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Top Layer clouds_3
+      rect:
+        serializedVersion: 2
+        x: 5430
+        y: 359
+        width: 1186
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 952e147437a88fa70800000000000000
+      internalID: 8860984494572823129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Top Layer clouds_4
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 473
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d775b9644c19329a0800000000000000
+      internalID: -6258998784930654339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Top Layer clouds_5
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 471
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f77e25499b7734c0800000000000000
+      internalID: -4307838620335704077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Top Layer clouds_6
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 432
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2ad378d549bd5130800000000000000
+      internalID: 3557202990327913004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Top Layer clouds_7
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 434
+        width: 34
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f29f52dbfbc0dd430800000000000000
+      internalID: 3809214877476976943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Top Layer clouds_8
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 434
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccdd15e1781c5f270800000000000000
+      internalID: 8283739875691322828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Top Layer clouds_9
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 384
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff1e12e6392a7e800800000000000000
+      internalID: 641660226015191551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Top Layer clouds_10
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 366
+        width: 63
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c27488f6bd649dd00800000000000000
+      internalID: 997906700722259756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Top Layer clouds_11
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 335
+        width: 27
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 233d7e2ff99cc0900800000000000000
+      internalID: 652117734874141490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Top Layer clouds_12
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 326
+        width: 38
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b0970de2f5024d80800000000000000
+      internalID: -8268039424981888840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Top Layer clouds_13
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 351
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44258564733e6a410800000000000000
+      internalID: 1488126553435427396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Top Layer clouds_14
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 315
+        width: 50
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 442ca11e494572020800000000000000
+      internalID: 2316913531713929796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Top Layer clouds_15
+      rect:
+        serializedVersion: 2
+        x: 6390
+        y: 352
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50cd5cbddeab61a00800000000000000
+      internalID: 726973920624106501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Top Layer clouds_16
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 337
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19a0d371575026a30800000000000000
+      internalID: 4206931002376653457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Top Layer clouds_17
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 330
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e29bb59c1d5dfea00800000000000000
+      internalID: 788083556816238894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Top Layer clouds_18
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 318
+        width: 29
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea0bb782d0f43b330800000000000000
+      internalID: 3725408234697896110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Top Layer clouds_19
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 325
+        width: 51
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3319ed6f6eda0740800000000000000
+      internalID: 5119148496626717502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Top Layer clouds_20
+      rect:
+        serializedVersion: 2
+        x: 1369
+        y: 202
+        width: 456
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fd637dcf9853da60800000000000000
+      internalID: 7697593631476248049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Top Layer clouds_21
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 289
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73fd92a18501df300800000000000000
+      internalID: 287403921803697975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Top Layer clouds_22
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 258
+        width: 73
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a231d0a69cae9eed0800000000000000
+      internalID: -2384116376927399126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Top Layer clouds_23
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 0
+        width: 616
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e154b2a8f4b177f00800000000000000
+      internalID: 1114389461231944990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Top Layer clouds_0: 3294227671012597583
+      Top Layer clouds_1: 4628290998340938262
+      Top Layer clouds_10: 997906700722259756
+      Top Layer clouds_11: 652117734874141490
+      Top Layer clouds_12: -8268039424981888840
+      Top Layer clouds_13: 1488126553435427396
+      Top Layer clouds_14: 2316913531713929796
+      Top Layer clouds_15: 726973920624106501
+      Top Layer clouds_16: 4206931002376653457
+      Top Layer clouds_17: 788083556816238894
+      Top Layer clouds_18: 3725408234697896110
+      Top Layer clouds_19: 5119148496626717502
+      Top Layer clouds_2: 934742008198439288
+      Top Layer clouds_20: 7697593631476248049
+      Top Layer clouds_21: 287403921803697975
+      Top Layer clouds_22: -2384116376927399126
+      Top Layer clouds_23: 1114389461231944990
+      Top Layer clouds_3: 8860984494572823129
+      Top Layer clouds_4: -6258998784930654339
+      Top Layer clouds_5: -4307838620335704077
+      Top Layer clouds_6: 3557202990327913004
+      Top Layer clouds_7: 3809214877476976943
+      Top Layer clouds_8: 8283739875691322828
+      Top Layer clouds_9: 641660226015191551
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

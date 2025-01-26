@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Enemy
   - Cloud
+  - Audio
+  - SpeedPowerUp
+  - Spawner
+  - UI
   layers:
   - Default
   - TransparentFX

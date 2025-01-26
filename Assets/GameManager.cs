@@ -1,8 +1,29 @@
 using UnityEngine;
+using System;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
+
+    private float topTime;
+    private int playerHealth;
+    public float TopTime
+    {
+        get => topTime;
+        set => topTime = Mathf.Max(0, value);
+    }
+
+public int PlayerHealth
+{
+    get => playerHealth;
+    private set
+    {
+        playerHealth = Mathf.Max(0, value);
+        OnHealthChanged?.Invoke(playerHealth);
+    }
+}
+
+    public event Action<int> OnHealthChanged;
 
     private void Awake()
     {
@@ -22,7 +43,6 @@ public class GameManager : MonoBehaviour
         Paused,
         GameOver
     }
-
     public GameState CurrentState { get; private set; }
 
     public void ChangeState(GameState newState)
@@ -42,8 +62,24 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void SetPlayerHealth(int health)
+    {
+        PlayerHealth = health;
+    }
+
+    public void IncreasePlayerHealth()
+    {
+        PlayerHealth += 1;
+    }
+
+    public void DecreasePlayerHealth()
+    {
+        PlayerHealth -= 1;
+    }
+
     private void Start()
     {
         ChangeState(GameState.MainMenu);
     }
+    
 }

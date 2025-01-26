@@ -5,27 +5,53 @@ using Cursor = UnityEngine.Cursor;
 
 public class MainMenu : MonoBehaviour
 {
+    private VisualElement root;
     private void OnEnable()
     {
+        GameManager.Instance.ChangeState(GameManager.GameState.MainMenu);
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
 
-        VisualElement root = GetComponent<UIDocument>().rootVisualElement;
+        root = GetComponent<UIDocument>().rootVisualElement;
+        
 
         Button buttonStart = root.Q<Button>("Play");
-        Button buttonCredits = root.Q<Button>("Credits");
+        Button buttonH2P = root.Q<Button>("H2P");
         Button buttonQuit = root.Q<Button>("Quit");
             
-        buttonStart.RegisterCallback<MouseEnterEvent>(evt => buttonStart.AddToClassList("buttonHover"));
-        buttonStart.RegisterCallback<MouseLeaveEvent>(evt => buttonStart.RemoveFromClassList("buttonHover"));
-        buttonStart.clicked += () => UnityEngine.SceneManagement.SceneManager.LoadScene("MainLevel");
+        buttonStart.clicked += () =>
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene("MainLevel");
+            GameManager.Instance.ChangeState(GameManager.GameState.Playing);
+        };
+        
+        
+        buttonH2P.clicked += () =>
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene("How2");
+            GameManager.Instance.ChangeState(GameManager.GameState.Playing);
+        };
 
-        buttonCredits.RegisterCallback<MouseEnterEvent>(evt => buttonCredits.AddToClassList("buttonHover"));
-        buttonCredits.RegisterCallback<MouseLeaveEvent>(evt => buttonCredits.RemoveFromClassList("buttonHover"));
+        buttonQuit.clicked += () => QuitGame();
+        
 
-        buttonQuit.RegisterCallback<MouseEnterEvent>(evt => buttonQuit.AddToClassList("buttonHover"));
-        buttonQuit.RegisterCallback<MouseLeaveEvent>(evt => buttonQuit.RemoveFromClassList("buttonHover"));
-        buttonQuit.clicked += () => Application.Quit();
     }
 
+    private void Start()
+    {
+        Label timerLabel = root.Q<Label>("Timer");
+        timerLabel.text = GameManager.Instance.TopTime.ToString();
+    }
+
+    void QuitGame()
+    {
+        #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+        #elif UNITY_WEBPLAYER
+            Application.OpenURL(webplayerQuitURL);
+        #else
+            Application.Quit();
+        #endif
+    }
+    
 }
